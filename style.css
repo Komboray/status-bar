@@ -1,0 +1,130 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,500;1,700&family=Roboto:ital,wght@0,100;0,500;0,900;1,700&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: pop;
+}
+
+.head{
+    text-align: center;
+}
+.head_1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.head_1 span{
+    color: #e74c3e;
+}
+
+.head_2{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 5px;
+}
+
+ul{
+    display: flex;
+    margin-top: 50px;
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.b{
+    font-size: 55px;
+    color: #ff4732;
+    margin: 0 30px;
+}
+
+.a{
+    font-size: 35px;
+    color: #333;
+}
+
+
+.text{
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff4732;
+}
+
+ul li .progress{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(68, 68, 68, 0.781);
+    margin: 14px 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.progress::after{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    color: rgba(68, 68, 68, 0.781);
+    right: 30px;
+}
+
+/* this is the uil */
+ul li .progress .a{
+    display: none;
+}
+
+ul li .progress p{
+    font-size: 14px;
+}
+
+.one::after{
+    width: 0;
+    height: 0;
+}
+.active{
+    background-color: #ff4732;
+}
+
+li .active::after{
+    background-color: #ff4732;
+}
+
+ul li .active p{
+    display: none;
+}
+
+ul li .active .a{
+    display: flex;
+}
+
+input{
+    border-color: black;
+}
